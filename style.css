@@ -38,8 +38,9 @@ h1{
 .header-menu--img{
   border : 1px solid #0e0d0d;
   border-radius: 2px;
-  width: 2rem;
+  width: 3rem;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .header-menu--btn{
@@ -66,14 +67,15 @@ h1{
   color: #f7f9fc;
 }
 
-
-
-
 .hidden{
   display: none;
 }
 
-
+.title__couronne{
+font-size: 2rem;
+color: #f7f9fc;
+margin-bottom: 10px;
+}
 
 .wrapper-active{
 display: grid;
@@ -247,6 +249,12 @@ margin: 5px;
 }
 
 /*----plateau------*/
+
+.title__plateau{
+  font-size: 2rem;
+  color: #f7f9fc;
+  margin-bottom: 10px;
+}
 
 .wrapper-plateau{
   display: grid;

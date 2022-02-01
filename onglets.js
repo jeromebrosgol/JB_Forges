@@ -88,23 +88,24 @@ ongletPlat.forEach(ongletP => {
     }
         
       }
-    })
     
-  })
-    /*for (j = 0; j < wrapper.length; j++) {
+    for (j = 0; j < wrapper.length; j++) {
 
-      if (wrapper[j].getAttribute('data-tab')
-        != index) {
+      if (wrapperPlat[j].getAttribute('data-tabPlat')
+        != index1) {
         /*!=different de*/
-       /* wrapper[j].classList.add("wrapper-none");
-        wrapper[j].classList.remove("wrapper-active");
+        wrapperPlat[j].classList.add("wrapper-plateau--none");
+        wrapperPlat[j].classList.remove("wrapper-plateau");
 
       } else {
 
-        wrapper[j].classList.add("wrapper-active");
-        wrapper[j].classList.remove("wrapper-none");
+        wrapperPlat[j].classList.add("wrapper-plateau");
+        wrapperPlat[j].classList.remove("wrapper-plateau--none");
       }
-    }*/
+    }
+  })
+    
+})
   
 
 /*-----end class active tab plateau----*/
