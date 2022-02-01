@@ -79,7 +79,7 @@ margin-bottom: 10px;
 
 .wrapper-active{
 display: grid;
-grid-template-columns: 5% 80% 10%;
+grid-template-columns: 1% 94% 5%;
 grid-template-areas:
 ". diamExt ."
 ". diamInt ."
@@ -258,7 +258,7 @@ margin: 5px;
 
 .wrapper-plateau{
   display: grid;
-  grid-template-columns: 5% 80% 10%;
+  grid-template-columns: 1% 94% 5%;
   grid-template-areas:
   ". haut ."
   ". larg ."
