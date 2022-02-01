@@ -125,7 +125,7 @@ calculHauteur.addEventListener("click", hauteur);
 
 /*------------------start init hauteur--------------------*/
 
-function hauteur() {
+function initHauteur() {
 
   let diamExt = document.getElementById('diamExt-4');
   let diamInt = document.getElementById('diamInt-4');
@@ -140,5 +140,38 @@ function hauteur() {
   poids.value = "";
 }
 let empty4 = document.getElementById('reset-4');
-empty4.addEventListener("click", hauteur);
+empty4.addEventListener("click",initHauteur);
 /*--------------------end init hauteur------------------*/
+
+/*----------------start calculpoids plateau---------------*/
+function calculpoidsPlateau() {
+  let haut = document.getElementById('hautPlat-1').value;
+  let larg = document.getElementById('largPlat-1').value;
+  let long = document.getElementById('longPlat-1').value;
+  let dens = document.getElementById('densPlat-1').value;
+  let poids = document.getElementById('poidsPlat-1');
+
+  poids.value = Math.round(haut * larg * long * dens * Math.pow(10, -6)) + " KG"
+}
+let calculPoidsPlateau = document.getElementById('calculPlat-1');
+calculPoidsPlateau.addEventListener("click", calculpoidsPlateau);
+/*--------------------end calculpoids plateau--------------------*/
+
+/*------------------start init poids----------------*/
+function initPoidsPlateau() {
+
+  let haut = document.getElementById('hautPlat-1');
+  let larg = document.getElementById('largPlat-1');
+  let long = document.getElementById('longPlat-1');
+  let dens = document.getElementById('densPlat-1');
+  let poids = document.getElementById('poidsPlat-1');
+
+  haut.value = "";
+  larg.value = "";
+  long.value = "";
+  dens.value = "";
+  poids.value = "";
+}
+let resetPoidsPlateau = document.getElementById('resetPlat-1');
+resetPoidsPlateau.addEventListener("click", initPoidsPlateau);
+/*----------------------end init poids-----------*/
