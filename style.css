@@ -1,0 +1,359 @@
+*,::before,::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #0d10d1;
+  
+}
+
+.contenair{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+}
+
+h1{
+  color: #ebdbdb;
+  margin: 10px;
+  text-align: center;
+}
+
+.header-menu{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.header-menu--img{
+  border : 1px solid #0e0d0d;
+  border-radius: 2px;
+  width: 2rem;
+  margin-left: 10px;
+}
+
+.header-menu--btn{
+  border : 2px solid black;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 4px;
+  text-align: center;
+  background: #f30a4c;
+  cursor: pointer;
+}
+
+.header-menu--btn:hover{
+  background: cyan;
+  
+}
+
+.header-menu--btn a{
+  text-decoration: none;
+  font-size: large;
+}
+
+.header-menu--btn a:hover{
+  color: #f7f9fc;
+}
+
+
+
+
+.hidden{
+  display: none;
+}
+
+
+
+.wrapper-active{
+display: grid;
+grid-template-columns: 5% 80% 10%;
+grid-template-areas:
+". diamExt ."
+". diamInt ."
+". long ."
+". dens ."
+". poids ."
+". calcul ."
+;
+gap : 20px;
+border : 3px solid black;
+border-radius: 0 0 10px 10px;
+margin-bottom: 20px;
+}
+
+
+
+.wrapper-none{
+  display: none;
+}
+
+ 
+
+.nav-item{
+ display: flex;
+
+}
+  
+
+.nav-item > li{
+  list-style: none;
+}
+
+.tab{
+  border : 2px solid black;
+  font-size: larger;
+  color: #f5f0f0;
+  padding: 5px;
+  width: 90%;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-active{
+  background: rgb(127, 235, 19);
+  color: #131314;
+  cursor: pointer;
+}
+
+
+.diamExt{
+  grid-area: diamExt;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.diamInt{
+  grid-area: diamInt;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+
+
+
+.long{
+  grid-area: long;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.long p{
+  margin-left: 30px;
+}
+
+.dens{
+  grid-area: dens;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.dens p{
+  margin-left: 32px;
+}
+
+.poids{
+  grid-area: poids;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.poids p{
+  margin-left: 40px;
+}
+
+.calcul{
+  grid-area: calcul;
+  border : 2px solid rgb(226, 11, 11);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 5px 5px #0bd347;
+}
+
+
+.calculate{
+  background: #19c8e7;
+  font-weight: bold;
+}
+
+
+
+
+
+p{
+  font-size: large;
+  color: #ebdbdb;
+}
+
+input{
+  width: 60%;
+  height: 30px;
+  background: #f7f9fc;
+  margin-left: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn{
+width: 100%;
+height: 40px;
+border-radius: 20px;
+background: #69eb69;
+font-size: large;
+font-weight: bold;
+margin: 5px;
+
+}
+
+
+.btn:hover{
+  background: #e91506;
+  color: #f5f0f0;
+}
+
+/*----plateau------*/
+
+.wrapper-plateau{
+  display: grid;
+  grid-template-columns: 5% 80% 10%;
+  grid-template-areas:
+  ". haut ."
+  ". larg ."
+  ". long ."
+  ". dens ."
+  ". poids ."
+  ". calcul ."
+  ;
+  gap : 20px;
+  border : 3px solid black;
+  border-radius: 0 0 10px 10px;
+  
+  }
+
+.wrapper-plateau--none{
+  display: none;
+}
+
+
+.hautPlateau{
+  grid-area: haut;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.largPlateau{
+  grid-area: larg;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.longPlateau{
+  grid-area: long;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.densPlateau{
+  grid-area: dens;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.poidsPlateau{
+  grid-area: poids;
+  border : 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+  
+.calculPlateau{
+  grid-area: calcul;
+  border : 2px solid rgb(226, 11, 11);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 5px 5px #0bd347;
+}
+
+.nav-plateau{
+display: flex;
+}
+
+.nav-plateau > li{
+  list-style: none;
+}
+
+.tab-plateau{
+  border : 2px solid black;
+  font-size: larger;
+  color: #f5f0f0;
+  padding: 5px;
+  width: 122px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-plateau--active{
+  background: rgb(127, 235, 19);
+  color: #131314;
+  cursor: pointer;
+
+}

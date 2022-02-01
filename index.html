@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="contenair"> <!---start contenair-->
+  <!--start header-->
+  <header>
+    <h1>calcul de volume</h1>
+    <div class="header-menu">
+    <img class="header-menu--img" 
+    src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" />
+    <span class="header-menu--btn hidden"><a href="#couronne">couronne</a></span>
+    <span class="header-menu--btn hidden"><a href="#plateau">plateau</a></span>
+    <span class="header-menu--btn hidden"><a href="">dilatation</a></span>
+  </div>
+  </header>
+  <!--end header-->
+  <!------------------------------------------------------------------------>
+  <!--start nav-->
+  <nav id="couronne">
+    <ul class="nav-item">
+      <li class="tab tab-active" data-tab="1">poids</li>
+      <li class="tab" data-tab="2">diam ext</li>
+      <li class="tab" data-tab="4">diam int</li>
+      <li class="tab" data-tab="3">longueur</li>
+    </ul>
+  </nav>
+  <!--end nav-->
+ <!----------------------------------------------------------------------->
+  <!--calul poids couronne-->
+  <div class="wrapper-active" data-tab="1">
+
+    <div class="diamExt" >
+      <p>diamètre ext</p>
+      <input type="text" id="diamExt-1">
+    </div>
+    <div class="diamInt">
+      <p>diamètre int</p>
+      <input type="text" id="diamInt-1">
+    </div>
+    <div class="long">
+      <p>hauteur</p>
+      <input type="text" id="long-cyl-1">
+    </div>
+    <div class="dens">
+      <p>densité</p>
+      <input type="text" id="dens-1">
+    </div>
+    <div class="poids calculate">
+
+      <p>poids</p>
+      <input type="text" id="poids-1">
+    </div>
+    <div class="calcul">
+      <button class="btn" id="calcul-1">calcul</button>
+      <button class="btn" id="reset-1">reset</button>
+    </div>
+  </div>
+ <!-------------------------------------------------------------------------------->
+  <!--calcul diametre extèrieur couronne-->
+  <div class="wrapper-active wrapper-none" data-tab="2">
+
+    <div class="diamExt calculate">
+      <p>diamètre ext</p>
+      <input type="text" id="diamExt-2">
+    </div>
+    <div class="diamInt">
+      <p>diamètre int</p>
+      <input type="text" id="diamInt-2">
+    </div>
+    <div class="long">
+      <p>hauteur</p>
+      <input type="text" id="long-cyl-2">
+    </div>
+    <div class="dens">
+      <p>densité</p>
+      <input type="text" id="dens-2">
+    </div>
+    <div class="poids">
+
+      <p>poids</p>
+      <input type="text" id="poids-2">
+    </div>
+    <div class="calcul">
+      <button class="btn" id="calcul-2">calcul</button>
+      <button class="btn" id="reset-2">reset</button>
+    </div>
+  </div>
+<!-------------------------------------------------------------------------------->
+  <!--calcul diametre intèrieur couronne-->
+  <div class="wrapper-active wrapper-none" data-tab="4">
+
+    <div class="diamExt ">
+      <p>diamètre ext</p>
+      <input type="text" id="diamExt-3">
+    </div>
+    <div class="diamInt calculate">
+      <p>diamètre int</p>
+      <input type="text" id="diamInt-3">
+    </div>
+    <div class="long">
+      <p>hauteur</p>
+      <input type="text" id="long-cyl-3">
+    </div>
+    <div class="dens">
+      <p>densité</p>
+      <input type="text" id="dens-3">
+    </div>
+    <div class="poids">
+
+      <p>poids</p>
+      <input type="text" id="poids-3">
+    </div>
+    <div class="calcul">
+      <button class="btn" id="calcul-3">calcul</button>
+      <button class="btn" id="reset-3">reset</button>
+    </div>
+  </div>
+<!-------------------------------------------------------------------------------->
+  <!--calcul hauteur couronne-->
+  <div class="wrapper-active wrapper-none" data-tab="3">
+
+    <div class="diamExt">
+      <p>diamètre ext</p>
+      <input type="text" id="diamExt-4">
+    </div>
+    <div class="diamInt">
+      <p>diamètre int</p>
+      <input type="text" id="diamInt-4">
+    </div>
+    <div class="long calculate">
+      <p>hauteur</p>
+      <input type="text" id="long-cyl-4">
+    </div>
+    <div class="dens">
+      <p>densité</p>
+      <input type="text" id="dens-4">
+    </div>
+    <div class="poids">
+
+      <p>poids</p>
+      <input type="text" id="poids-4">
+    </div>
+    <div class="calcul">
+      <button class="btn" id="calcul-4">calcul</button>
+      <button class="btn" id="reset-4">reset</button>
+    </div>
+  </div>
+
+   <!--start nav-->
+   <nav id="plateau">
+    <ul class="nav-plateau">
+      <li class="tab-plateau tab-plateau--active" data-tabPlat="1">poids</li>
+      <li class="tab-plateau" data-tabPlat="2">longueur</li>
+      <li class="tab-plateau" data-tabPlat="3">largeur</li>
+      <li class="tab-plateau" data-tabPlat="4">hauteur</li>
+    </ul>
+  </nav>
+  <!--end nav-->
+
+<!--------calcul plateau--------------------->
+
+<!--------start calcul poids plateau--------------------->
+
+  <div class="wrapper-plateau" data-tabPlat="1">
+    <div class="hautPlateau ">
+      <p>hauteur</p>
+      <input type="text" id="hautPlat-1">
+    </div>
+    <div class="largPlateau">
+      <p>largeur</p>
+      <input type="text" id="largPlat-1">
+    </div>
+    <div class="longPlateau">
+      <p>longueur</p>
+      <input type="text" id="longPlat-1">
+    </div>
+    <div class="densPlateau">
+      <p>densité</p>
+      <input type="text" id="densPlat-1">
+    </div>
+    <div class="poidsPlateau calculate">
+
+      <p>poids</p>
+      <input type="text" id="poidsPlat-1">
+    </div>
+    <div class="calculPlateau">
+      <button class="btn" id="calculPlat-1">calcul</button>
+      <button class="btn" id="resetPlat-1">reset</button>
+    </div>
+  </div>
+
+    <!--------end calcul poids plateau--------------------->
+
+  <!--------start calcul longueur plateau--------------------->
+  <div class="wrapper-plateau wrapper-plateau--none" data-tabPlat="2">
+    <div class="hautPlateau ">
+      <p>hauteur</p>
+      <input type="text" id="hautPlat-2">
+    </div>
+    <div class="largPlateau">
+      <p>largeur</p>
+      <input type="text" id="largPlat-2">
+    </div>
+    <div class="longPlateau calculate">
+      <p>longueur</p>
+      <input type="text" id="longPlat-2">
+    </div>
+    <div class="densPlateau">
+      <p>densité</p>
+      <input type="text" id="densPlat-2">
+    </div>
+    <div class="poidsPlateau ">
+
+      <p>poids</p>
+      <input type="text" id="poidsPlat-2">
+    </div>
+    <div class="calculPlateau">
+      <button class="btn" id="calculPlat-2">calcul</button>
+      <button class="btn" id="resetPlat-2">reset</button>
+    </div>
+  </div>
+<!--------end calcul longueur plateau--------------------->
+
+<!--------start calcul largeur plateau--------------------->
+<div class="wrapper-plateau wrapper-plateau--none" data-tabPlat="3">
+    <div class="hautPlateau ">
+      <p>hauteur</p>
+      <input type="text" id="hautPlat-3">
+    </div>
+    <div class="largPlateau calculate">
+      <p>largeur</p>
+      <input type="text" id="largPlat-3">
+    </div>
+    <div class="longPlateau">
+      <p>longueur</p>
+      <input type="text" id="longPlat-3">
+    </div>
+    <div class="densPlateau">
+      <p>densité</p>
+      <input type="text" id="densPlat-3">
+    </div>
+    <div class="poidsPlateau ">
+
+      <p>poids</p>
+      <input type="text" id="poidsPlat-3">
+    </div>
+    <div class="calculPlateau">
+      <button class="btn" id="calculPlat-3">calcul</button>
+      <button class="btn" id="resetPlat-3">reset</button>
+    </div>
+    </div>
+<!--------end calcul largeur plateau--------------------->
+
+<!--------start calcul hauteur plateau--------------------->
+<div class="wrapper-plateau wrapper-plateau--none" data-tabPlat="4">
+    <div class="hautPlateau calculate ">
+      <p>hauteur</p>
+      <input type="text" id="hautPlat-4">
+    </div>
+    <div class="largPlateau">
+      <p>largeur</p>
+      <input type="text" id="largPlat-4">
+    </div>
+    <div class="longPlateau">
+      <p>longueur</p>
+      <input type="text" id="longPlat-4">
+    </div>
+    <div class="densPlateau">
+      <p>densité</p>
+      <input type="text" id="densPlat-4">
+    </div>
+    <div class="poidsPlateau ">
+
+      <p>poids</p>
+      <input type="text" id="poidsPlat-4">
+    </div>
+    <div class="calculPlateau">
+      <button class="btn" id="calculPlat-4">calcul</button>
+      <button class="btn" id="resetPlat-4">reset</button>
+    </div>
+  </div>
+<!--------end calcul hauteur plateau--------------------->
+  
+<!-------------------------------------------------------------------------------->
+</div> <!---end contenair-->
+<script src="onglets.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
