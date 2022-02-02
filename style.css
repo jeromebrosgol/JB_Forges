@@ -118,6 +118,7 @@ margin-bottom: 20px;
 
 .nav-item > li{
   list-style: none;
+  font-size: 1rem;
 }
 
 .tab{
@@ -354,6 +355,7 @@ display: flex;
 
 .nav-plateau > li{
   list-style: none;
+  font-size: 1rem;
 }
 
 .tab-plateau{
