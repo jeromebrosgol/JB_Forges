@@ -242,6 +242,39 @@ function initLargPlateau() {
   dens.value = "";
   poids.value = "";
 }
-let resetHautPlateau = document.getElementById('resetPlat-3');
-resetHautPlateau.addEventListener("click", initLargPlateau);
+let resetLargPlateau = document.getElementById('resetPlat-3');
+resetLargPlateau.addEventListener("click", initLargPlateau);
 /*----------------------end init largeur----------- */
+
+/*----------------start hauteur plateau---------------*/
+function calculHautPlateau() {
+  let haut = document.getElementById('hautPlat-4');
+  let larg = document.getElementById('largPlat-4').value;
+  let long = document.getElementById('longPlat-4').value;
+  let dens = document.getElementById('densPlat-4').value;
+  let poids = document.getElementById('poidsPlat-4').value;
+
+  haut.value = Math.round(poids / (larg * long * dens * Math.pow(10, -6)))
+}
+let calculHauteurPlateau = document.getElementById('calculPlat-4');
+calculHauteurPlateau.addEventListener("click", calculHautPlateau);
+/*--------------------end hauteur plateau--------------------
+
+/*------------------start init hauteur----------------*/
+function initHautPlateau() {
+
+  let haut = document.getElementById('hautPlat-4');
+  let larg = document.getElementById('largPlat-4');
+  let long = document.getElementById('longPlat-4');
+  let dens = document.getElementById('densPlat-4');
+  let poids = document.getElementById('poidsPlat-4');
+
+  haut.value = "";
+  larg.value = "";
+  long.value = "";
+  dens.value = "";
+  poids.value = "";
+}
+let resetHautPlateau = document.getElementById('resetPlat-4');
+resetHautPlateau.addEventListener("click", initHautPlateau);
+/*----------------------end init hauteur----------- */
